@@ -1,3 +1,23 @@
+# Hyde-Bootstrap
+
+## A port of [Hyde](https://github.com/mdo/hyde/), the brazen [Jekyll](http://jekyllrb.com/) theme, for [Jekyll Bootstrap](http://jekyllbootstrap.com/).
+
+To use this theme, in the root of your website's repository, run:
+
+    rake theme:install git="https://github.com/avnestico/hyde-bootstrap.git"
+
+To clone this theme and modify it, from the parent folder of your website's repository, run:
+
+    git clone git@github.com:avnestico/hyde-bootstrap.git
+    cd hyde-bootstrap
+    git remote set-url git@github.com:USERNAME/hyde-bootstrap.git
+    {{ make changes here }}
+    git push
+    cd /path/to/USERNAME.github.io
+    rake theme:install git="https://github.com/USERNAME/hyde-bootstrap.git"
+
+---
+
 # Hyde
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
