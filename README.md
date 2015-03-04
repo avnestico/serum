@@ -23,6 +23,19 @@ To clone this theme and modify it, from the parent folder of your website's repo
     cd ../USERNAME.github.io
     rake theme:install git="https://github.com/USERNAME/hyde-bootstrap.git"
 
+### Variables
+
+Add the following to your `_config.yml`, changing them as necessary:
+
+    # Hyde-bootstrap variables
+    baseurl: /
+
+    hyde:
+      version: 2.1.0
+
+    github:
+      repo: https://github.com/avnestico/avnestico.github.io
+
 ---
 
 # Hyde
