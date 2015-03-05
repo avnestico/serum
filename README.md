@@ -25,14 +25,6 @@ To clone this theme and modify it, from the parent folder of your website's repo
 
 ### Setup
 
-Add this line to the YAML front matter of `_layouts/page.html`:
-
-    ispage: true
-
-And add this to the front matter of `_layouts/post.html`:
-
-    ispost: true
-
 Add the following to your `_config.yml`, changing the variables' values as necessary:
 
     # Hyde-bootstrap variables
