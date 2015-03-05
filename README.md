@@ -23,18 +23,34 @@ To clone this theme and modify it, from the parent folder of your website's repo
     cd ../USERNAME.github.io
     rake theme:install git="https://github.com/USERNAME/hyde-bootstrap.git"
 
-### Variables
+### Setup
 
-Add the following to your `_config.yml`, changing them as necessary:
+Add this line to the YAML front matter of `_layouts/page.html`:
+
+    ispage: true
+
+And add this to the front matter of `_layouts/post.html`:
+
+    ispost: true
+
+Add the following to your `_config.yml`, changing the variables' values as necessary:
 
     # Hyde-bootstrap variables
     baseurl: /
+
+    paginate: 5 # Include this if you use pagination, as in the Hyde index page
 
     hyde:
       version: 2.1.0
 
     github:
       repo: https://github.com/avnestico/avnestico.github.io
+
+Optional: adding the following to your `_config.yml` makes your links look better:
+
+    # Permalinks
+    permalink: pretty
+    relative_permalinks: true
 
 ---
 
