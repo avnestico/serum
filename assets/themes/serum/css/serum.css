@@ -1,11 +1,11 @@
 /* Navy Theme */
 .theme-navy .sidebar {
-    background-color: navy;
-    color: rgba(255, 255, 255, .7);
+    background-color: #000060;
+    color: rgba(255, 255, 255, .6);
 }
 .theme-navy .content a,
 .theme-navy .related-posts li a:hover {
-    color: mediumblue;
+    color: #0000c0;
 }
 
 /* Split sidebar */
