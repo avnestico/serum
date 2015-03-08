@@ -1,5 +1,5 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
+<div class="sidebar sidebar-top">
+  <div class="container">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
@@ -25,8 +25,14 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+    </nav>
+  </div>
+</div>
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+<div class="sidebar sidebar-bottom">
+  <div class="container sidebar-sticky">
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">View source code on Github</a>
     </nav>
     <p>Brought to life with <a href="http://jekyllbootstrap.com/">Jekyll Bootstrap</a> v{{ site.JB.version }} and <a href="http://hyde.getpoole.com/">Hyde</a> v{{ site.hyde.version }}, married with the magic of <a href="https://github.com/avnestico/serum/">Serum</a>.</p>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>

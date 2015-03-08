@@ -7,3 +7,36 @@
 .theme-navy .related-posts li a:hover {
     color: navy;
 }
+
+/* Split sidebar */
+@media (min-width: 48em) {
+    .sidebar-top {
+        bottom: auto;
+        z-index: 1;
+    }
+}
+@media (max-width: 48em) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .sidebar-bottom {
+        order: 3;
+    }
+    .sidebar-top {
+        order: 1;
+    }
+    .content {
+        order: 2;
+        flex-grow: 1;
+    }
+}
+
+/* Spacing fixes */
+.container > :last-child {
+    margin-bottom: 0;
+}
+.sidebar-sticky {
+    bottom: 2rem;
+}
