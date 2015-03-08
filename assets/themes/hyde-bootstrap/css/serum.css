@@ -1,13 +1,9 @@
 /* Navy Theme */
 .theme-navy .sidebar {
     background-color: navy;
+    color: rgba(255, 255, 255, .7);
 }
 .theme-navy .content a,
 .theme-navy .related-posts li a:hover {
     color: navy;
-}
-
-/* Increase text opacity for use with theme */
-.sidebar {
-    color: rgba(255, 255, 255, .7);
 }
