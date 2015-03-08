@@ -1,6 +1,6 @@
-# Hyde-Bootstrap
+# Serum
 
-## A port of [Hyde](https://github.com/mdo/hyde/), the brazen [Jekyll](http://jekyllrb.com/) theme, for use with [Jekyll Bootstrap](http://jekyllbootstrap.com/).
+## Serum marries the utility of [Jekyll Bootstrap](http://jekyllbootstrap.com/) with the flair of the [Hyde](https://github.com/mdo/hyde/) theme.
 
 ### Prerequisites
 
@@ -10,24 +10,24 @@
 
 To use this theme, in the root of your website's repository, run:
 
-    rake theme:install git="https://github.com/avnestico/hyde-bootstrap.git"
+    rake theme:install git="https://github.com/avnestico/serum.git"
 
 To clone this theme and modify it, from the parent folder of your website's repository, run:
 
-    git clone git@github.com:avnestico/hyde-bootstrap.git
-    cd hyde-bootstrap
-    git remote set-url git@github.com:USERNAME/hyde-bootstrap.git
+    git clone git@github.com:avnestico/serum.git
+    cd serum
+    git remote set-url git@github.com:USERNAME/serum.git
     {{ make sure the above repo exists on GitHub }}
     {{ make changes here }}
     git push
     cd ../USERNAME.github.io
-    rake theme:install git="https://github.com/USERNAME/hyde-bootstrap.git"
+    rake theme:install git="https://github.com/USERNAME/serum.git"
 
 ### Setup
 
 Add the following to your `_config.yml`, changing the variables' values as necessary:
 
-    # Hyde-bootstrap variables
+    # Serum variables
     baseurl: /
 
     paginate: 5 # Include this if you use pagination, as in the Hyde index page

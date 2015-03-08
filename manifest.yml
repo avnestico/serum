@@ -1,7 +1,7 @@
 ---
-name : "hyde-bootstrap"
-website : "https://github.com/poole/hyde"
-description : "A port of Hyde, the brazen Jekyll theme, for Jekyll Bootstrap"
+name : "Serum"
+website : "https://avnestico.github.io/"
+description : "Serum marries the utility of Jekyll Bootstrap with the flair of the Hyde theme."
 author:
   name : "Andrew Nestico"
   website : "https://avnestico.github.io/"
