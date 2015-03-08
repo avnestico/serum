@@ -40,3 +40,6 @@
 .sidebar-sticky {
     bottom: 2rem;
 }
+.sidebar-top {
+    padding-bottom: 1rem;
+}
