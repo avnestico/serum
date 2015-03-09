@@ -15,23 +15,6 @@
         z-index: 1;
     }
 }
-@media (max-width: 48em) {
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    .sidebar-bottom {
-        order: 3;
-    }
-    .sidebar-top {
-        order: 1;
-    }
-    .content {
-        order: 2;
-        flex-grow: 1;
-    }
-}
 
 /* Spacing fixes */
 .container > :last-child {
@@ -42,4 +25,134 @@
 }
 .sidebar-top {
     padding-bottom: 1rem;
+}
+
+/* Bottom sidebar font size */
+.sidebar-bottom {
+    font-size: 14px;
+}
+@media (min-height: 52em) and (min-width: 58em) {
+    .sidebar-bottom {
+        font-size: 16px;
+    }
+}
+
+/* flexbox support for mobile view */
+@media (max-width: 47.99em) {
+    /* input to http://pleeease.io/play/
+    html, body {
+        height: 100%;
+        min-height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: 0 0 auto;
+    }
+    .sidebar-top {
+        order: 1
+    }
+    .sidebar-bottom {
+        order: 3
+    }
+    .content {
+        flex: 1 0 auto;
+        order: 2;
+        width: 100%;
+    }
+    output and duplicate -webkit-box* properties with -moz-box* */
+    html, body {
+        height: 100%;
+        min-height: 100%;
+    }
+    body {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .sidebar {
+        -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .sidebar-top {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1
+    }
+    .sidebar-bottom {
+        -webkit-box-ordinal-group: 4;
+        -moz-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+        order: 3
+    }
+    .content {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        width: 100%;
+    }
+}
+
+/* Mobile view tweaks */
+@media (max-width: 47.99em) {
+    .sidebar-nav-item {
+        display: inline;
+    }
+    .sidebar-nav-item + .sidebar-nav-item:before {
+        content: ' \00b7  ';
+        font-weight: normal;
+    }
+    .sidebar {
+        padding: 1rem 0;
+    }
+    .content {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .sidebar-about > h1 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0.5rem;
+    }
+    .lead {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 37.99em) {
+    .sidebar-about > h1 {
+        font-size: 10vw;
+    }
+}
+
+/* Tweak to let links take up entire sidebar-nav-item divs now that <a> is inside <div> */
+@media (min-width: 48em) {
+    .sidebar-nav-item > a {
+        display: block;
+        width: 100%;
+    }
 }
