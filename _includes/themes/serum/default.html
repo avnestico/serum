@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-  {% include themes/serum/head.html %}
+  {% include themes/{{ page.theme.name }}/head.html %}
 
   <body class="theme-navy">
 
-    {% include themes/serum/sidebar.html %}
+    {% include themes/{{ page.theme.name }}/sidebar.html %}
 
     <div class="content container">
       {% if page.display_title %}
