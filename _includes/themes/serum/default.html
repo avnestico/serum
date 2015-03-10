@@ -14,7 +14,11 @@
       {{ content }}
     </div>
 
+    {% include themes/{{ page.theme.name }}/sidebar-bottom.html %}
+
     {% include JB/analytics %}
+
+    <script src="{{ ASSET_PATH }}/webkit.js" type="text/javascript"></script>
 
   </body>
 </html>

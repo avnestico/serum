@@ -51,15 +51,8 @@
     .sidebar {
         flex: 0 0 auto !important;
     }
-    .sidebar-top {
-        order: 1;
-    }
-    .sidebar-bottom {
-        order: 3;
-    }
     .content {
         flex: 1 0 auto !important;
-        order: 2;
         width: 100%;
     }
     output and duplicate -webkit-box* properties with -moz-box* */

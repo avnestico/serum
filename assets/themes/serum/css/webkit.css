@@ -1,0 +1,10 @@
+/* Reset display property to fix sticky footer behaviour on legacy webkit browsers. See webkit.js for details. */
+@media (max-width: 47.99em ) {
+    #webkit-fix-enabled {
+        display: block;
+    }
+    #webkit-fix-disabled {
+        display: -webkit-box;
+        display: flex;
+    }
+}
