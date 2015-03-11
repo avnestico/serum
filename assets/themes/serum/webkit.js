@@ -68,6 +68,7 @@ if (activateFix) {
     // This is needed to cover the edge case of a page that needs the fix in landscape but does not in portrait
     addCssToHead("/assets/themes/serum/css/webkit.css");
     webkitFlexWorkaround();
+    window.addEventListener("resize", function(){ webkitFlexWorkaround(); });
 }
 
 function addCssToHead(filename) {
