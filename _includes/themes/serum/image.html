@@ -1,0 +1,8 @@
+<figure>
+  <a href="{{ page.url }}../{{ image.src }}"><img alt="{{ image.caption }}" src="{{ page.url }}../{{ image.src }}"></a>
+  <figcaption>{{ image.caption }}
+    {% if image.ret_url %}
+      [<a href="{{ image.ret_url }}">{% if image.ret_name %}{{ image.ret_name }}{% else %}Source{% endif %}</a>]
+    {% endif %}
+  </figcaption>
+</figure>

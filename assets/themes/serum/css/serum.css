@@ -135,3 +135,21 @@
         width: 100%;
     }
 }
+
+/* Changes for image look and feel */
+figure {
+    background-color: #000060;
+    margin: 0 0 1rem;
+}
+img {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+figcaption {
+    color: #FFF;
+    font-size: 75%;
+    padding: 0.5rem;
+}
+figcaption a {
+    color: #FFF !important;
+}
