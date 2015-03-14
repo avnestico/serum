@@ -16,6 +16,11 @@
     }
 }
 
+/* Justify content text */
+.content {
+    text-align: justify;
+}
+
 /* Spacing fixes */
 .container > :last-child {
     margin-bottom: 0;
